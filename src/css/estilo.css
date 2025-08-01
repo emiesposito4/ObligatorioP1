@@ -202,3 +202,7 @@ footer a {
   text-decoration: underline;
 
 }
+
+#aIniciarSesion:hover, #aRegistrarse:hover {
+  color: rgb(0, 0, 149);
+}
