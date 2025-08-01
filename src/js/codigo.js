@@ -450,6 +450,7 @@ function cerrarSesion() {
     mostrar("inicioSesion");
     ocultar("navCliente");
     ocultar("navPaseador");
+    ocultar("inicioSesion");
 
     usuarioLogueado = null;
     paseadorLogueado = null;
