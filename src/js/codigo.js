@@ -468,6 +468,29 @@ function cerrarSesion() {
     document.querySelector("#pMensajeGestionContrataciones").innerHTML = "";
 }
 
+// Apretar aRegistrarse -----------------------------------------------------------------------------------------------
+
+document.querySelector("#aRegistrarse").addEventListener("click", aRegistrarse);
+
+function aRegistrarse() {
+    document.querySelector("#txtNombreUsuarioCliente").value = "";
+    document.querySelector("#txtContraseniaCliente").value = "";
+    document.querySelector("#txtNombrePerro").value = "";
+    document.querySelector("#pRegistro").innerHTML = "";
+}
+
+//Apretra aInicioSesion ----------------------------------------------------------------------------------------------
+
+document.querySelector("#aIniciarSesion").addEventListener("click", aIniciarSesion);
+
+function aIniciarSesion() {
+    document.querySelector("#txtNombreInicioDeSesion").value = "";
+    document.querySelector("#txtContraseniaInicioDeSesion").value = "";
+    document.querySelector("#pInicioSesion").innerHTML = "";
+    document.querySelector("#pSeleccionPaseador").innerHTML = "";
+    document.querySelector("#pMensajeGestionContrataciones").innerHTML = "";
+}
+
 
 // Funciones ocultar y mostrar ------------------------------------------------------------------------------------------
 
