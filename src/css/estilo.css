@@ -10,3 +10,9 @@
 #aIniciarSesion:hover, #aRegistrarse:hover {
   color: rgb(0, 0, 149);
 }
+
+
+
+header {
+  background-color: gray;
+}
