@@ -10,176 +10,175 @@
 
     <link rel="stylesheet" href="src/css/estilo.css">
 </head>
-<div>
+
 <body>
 
-    <div id="contenedor">
-        <header>
-            <img id="logo" src="https://cdn-icons-png.freepik.com/512/98/98110.png" alt="logo" />
-            <nav>
-               
-                <ul id="navCliente"> 
-                    <li><a id="aRealizarContratacion">Realizar contratación</a></li>
-                     <li><a id="aCancelarContratacion">Cancelar contratación</a></li>
-                    <li><a id="aListadoEstadistico">Listado estadístico</a></li>
-                    <li><a id="aCerrarSesionCliente">Cerrar sesión</a></li>
-                </ul><br>
-
-
-                <ul id="navPaseador"> 
-                    <li><a id="aProcesarContrataciones">Procesar contrataciones</a></li>
-                    <li><a id="aListado">Listado</a></li>
-                    <li><a id="aCerrarSesionPaseador">Cerrar sesión</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-
-        <main>
-
-            <section id="registro">
-                <h1>Registro Cliente</h1> 
-                <label for="txtNombreUsuarioCliente">Nombre de usuario: </label>
-                <input type="text" id="txtNombreUsuarioCliente">
-                <label for="txtContraseniaCliente">Contraseña: </label>
-                <input type="text" id="txtContraseniaCliente">
-                <label for="txtNombrePerro">Nombre de su perro: </label>
-                <input type="text" id="txtNombrePerro">
-                <label for="slcTamanioPerro">Tamaño de su perro: </label>
-                <select id="slcTamanioPerro">
-                    <option value="Grande">Grande</option>
-                    <option value="Mediano">Mediano</option>
-                    <option value="Chico">Chico</option>
-                </select>
-                <input type="button" id="btnRegistroCliente" value="Registrar">
-                <p id="pRegistro"></p>
-                <a id="aIniciarSesion">Iniciar Sesión</a>
-                <hr>
-            </section>
-
-            <section id="inicioSesion">
-                <h1>Inicio de sesión</h1> 
-                <label for="txtNombreInicioDeSesion">Nombre de usuario: </label>
-                <input type="text" id="txtNombreInicioDeSesion">
-                <label for="txtContraseniaInicioDeSesion">Contraseña: </label>
-                <input type="text" id="txtContraseniaInicioDeSesion">
-                <input type="button" id="btnIniciarSesion" value="Iniciar Sesión">
-                <p id="pInicioSesion"></p>
-                <a id="aRegistrarse">Registrarse</a>
-                
-            </section>
-
-            <section id="seleccionarPaseador">
-                <h1>Seleccionar paseador</h1> 
-                <label for="slcPaseador">Selecciona un paseador </label>
-                <select id="slcPaseador">
-                    
-
-
-                </select>
-                <input type="button" id="btnSeleccionarPaseador" value="Confirmar">
-                <p id="pSeleccionPaseador"></p>
-                <hr>
-            </section>
+    <header>
+        <img id="logo" src="https://cdn-icons-png.freepik.com/512/98/98110.png" alt="logo" />
+        <nav>
             
-            <section id="gestionContrataciones">
-                <h1>Gestión de contrataciones</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nombre de usuario</th>
-                            <th>Tamaño del Perro</th>
-                            <th>Procesar</th>
-                            <th>Estado</th>
-                        
-                        </tr>
-                    </thead>
-                    <tbody id="tblGestionContrataciones">
-                        
-                        
-                    </tbody>
-                </table>
-                <p id="pMensajeGestionContrataciones"></p>
-                <hr>
-            </section>
+            <ul id="navCliente"> 
+                <li><a id="aRealizarContratacion">Realizar contratación</a></li>
+                    <li><a id="aCancelarContratacion">Cancelar contratación</a></li>
+                <li><a id="aListadoEstadistico">Listado estadístico</a></li>
+                <li><a id="aCerrarSesionCliente">Cerrar sesión</a></li>
+            </ul><br>
 
-            <section id="cancelacionContrataciones">
-                <h1>Cancelación de contrataciones</h1> 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Paseador</th>
-                            <th>Estado</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="tblCancelacionContrataciones">
-                        <tr>
 
-                            
-                        </tr>
-                    </tbody>
-                </table>
-                <p id="pMensajeCancelacionContrataciones"></p>
-                <hr>
-            </section>
+            <ul id="navPaseador"> 
+                <li><a id="aProcesarContrataciones">Procesar contrataciones</a></li>
+                <li><a id="aListado">Listado</a></li>
+                <li><a id="aCerrarSesionPaseador">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
 
-            <section id="listadoCliente">
+    <main>
+
+        <section id="registro">
+            <h1>Registro Cliente</h1> 
+            <label for="txtNombreUsuarioCliente">Nombre de usuario: </label>
+            <input type="text" id="txtNombreUsuarioCliente">
+            <label for="txtContraseniaCliente">Contraseña: </label>
+            <input type="text" id="txtContraseniaCliente">
+            <label for="txtNombrePerro">Nombre de su perro: </label>
+            <input type="text" id="txtNombrePerro">
+            <label for="slcTamanioPerro">Tamaño de su perro: </label>
+            <select id="slcTamanioPerro">
+                <option value="Grande">Grande</option>
+                <option value="Mediano">Mediano</option>
+                <option value="Chico">Chico</option>
+            </select>
+            <input type="button" id="btnRegistroCliente" value="Registrar">
+            <p id="pRegistro"></p>
+            <a id="aIniciarSesion">Iniciar Sesión</a>
+            <hr>
+        </section>
+
+        <section id="inicioSesion">
+            <h1>Inicio de sesión</h1> 
+            <label for="txtNombreInicioDeSesion">Nombre de usuario: </label>
+            <input type="text" id="txtNombreInicioDeSesion">
+            <label for="txtContraseniaInicioDeSesion">Contraseña: </label>
+            <input type="text" id="txtContraseniaInicioDeSesion">
+            <input type="button" id="btnIniciarSesion" value="Iniciar Sesión">
+            <p id="pInicioSesion"></p>
+            <a id="aRegistrarse">Registrarse</a>
+            
+        </section>
+
+        <section id="seleccionarPaseador">
+            <h1>Seleccionar paseador</h1> 
+            <label for="slcPaseador">Selecciona un paseador </label>
+            <select id="slcPaseador">
                 
-                <h1>Listado estadístico del cliente</h1>
 
-                <table> 
-                    <thead>
-                        <tr>
-                            <th>Paseadores</th>
-                            <th>Cant. Perros asignados</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tblListadoCliente">
-                        
-                    </tbody>
-                </table><br><br>
-                <hr>
-            </section>
 
-            <section id="listadoPaseador">
-                <h1>Listado de perros del paseador</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Tamaño</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tblListadoPerrosPaseador">
-                        
-                    </tbody>
-                </table><br><br>
-                <p id="pMensajeListadoPerrosPaseador"></p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Total de cupos ocupados</th>
-                            <th>Total de cupos máximos</th>
-                            <th>Porcentaje de cupos ocupados</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tblListadoPerrosPaseadorConteo">
-                        
-                    </tbody>
-                </table>
-                <hr>
-            </section>
-
-            <section id="cerrarSesion">
-                <h1>Cerrar sesión</h1>
-                <input type="button" id="btnCerrarSesion" value="Cerrar sesión">
-                <hr>
-            </section>
-
-        </main>
+            </select>
+            <input type="button" id="btnSeleccionarPaseador" value="Confirmar">
+            <p id="pSeleccionPaseador"></p>
+            <hr>
+        </section>
         
-    </div>
+        <section id="gestionContrataciones">
+            <h1>Gestión de contrataciones</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de usuario</th>
+                        <th>Tamaño del Perro</th>
+                        <th>Procesar</th>
+                        <th>Estado</th>
+                    
+                    </tr>
+                </thead>
+                <tbody id="tblGestionContrataciones">
+                    
+                    
+                </tbody>
+            </table>
+            <p id="pMensajeGestionContrataciones"></p>
+            <hr>
+        </section>
+
+        <section id="cancelacionContrataciones">
+            <h1>Cancelación de contrataciones</h1> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paseador</th>
+                        <th>Estado</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tblCancelacionContrataciones">
+                    <tr>
+
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <p id="pMensajeCancelacionContrataciones"></p>
+            <hr>
+        </section>
+
+        <section id="listadoCliente">
+            
+            <h1>Listado estadístico del cliente</h1>
+
+            <table> 
+                <thead>
+                    <tr>
+                        <th>Paseadores</th>
+                        <th>Cant. Perros asignados</th>
+                    </tr>
+                </thead>
+                <tbody id="tblListadoCliente">
+                    
+                </tbody>
+            </table><br><br>
+            <hr>
+        </section>
+
+        <section id="listadoPaseador">
+            <h1>Listado de perros del paseador</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tamaño</th>
+                    </tr>
+                </thead>
+                <tbody id="tblListadoPerrosPaseador">
+                    
+                </tbody>
+            </table><br><br>
+            <p id="pMensajeListadoPerrosPaseador"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Total de cupos ocupados</th>
+                        <th>Total de cupos máximos</th>
+                        <th>Porcentaje de cupos ocupados</th>
+                    </tr>
+                </thead>
+                <tbody id="tblListadoPerrosPaseadorConteo">
+                    
+                </tbody>
+            </table>
+            <hr>
+        </section>
+
+        <section id="cerrarSesion">
+            <h1>Cerrar sesión</h1>
+            <input type="button" id="btnCerrarSesion" value="Cerrar sesión">
+            <hr>
+        </section>
+
+    </main>
+    
+   
 
     <script src="src/js/Contratacion.js"></script>
     <script src="src/js/Cliente.js"></script>
@@ -187,5 +186,5 @@
     <script src="src/js/Sistema.js"></script>
     <script src="src/js/codigo.js"></script>
 </body>
-</div>
+
 </html>
