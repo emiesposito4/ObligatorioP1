@@ -12,6 +12,7 @@ ocultar("listadoPaseador");
 ocultar("cerrarSesion");
 ocultar("navCliente");
 ocultar("navPaseador");
+ocultar("inicioSesion");
 
 
 //NavBar Cliente ------------------------------------------------------------------------------------------
@@ -19,6 +20,8 @@ document.querySelector("#aRealizarContratacion").addEventListener("click", mostr
 document.querySelector("#aCancelarContratacion").addEventListener("click", mostrarCancelarContratacion);
 document.querySelector("#aListadoEstadistico").addEventListener("click", mostrarListadoCliente);
 document.querySelector("#aCerrarSesionCliente").addEventListener("click", mostrarCerrarSesionC);
+document.querySelector("#aIniciarSesion").addEventListener("click", mostrarIniciarSesion);
+document.querySelector("#aRegistrarse").addEventListener("click", mostrarRegistrarse);
 
 function mostrarRealizarContratacion() {
     ocultarTodo();
@@ -40,6 +43,16 @@ function mostrarListadoCliente() {
 function mostrarCerrarSesionC() {
     ocultarTodo();
     mostrar("cerrarSesion");
+}
+
+function mostrarIniciarSesion() {
+    ocultarTodo();
+    mostrar("inicioSesion");
+}
+
+function mostrarRegistrarse() {
+    ocultarTodo();
+    mostrar("registro")
 }
 
 
