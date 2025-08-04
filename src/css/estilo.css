@@ -19,6 +19,11 @@ header nav ul li a {
   color: var(--Texto) !important;
   font-family: "Inter";
   font-weight: 800;
+  padding-left: 6px;
+}
+
+header nav ul li a:hover {
+  border-left: 3px solid var(--Texto);
 }
 
 
