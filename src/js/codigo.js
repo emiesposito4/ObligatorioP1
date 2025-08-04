@@ -116,6 +116,11 @@ function registroCliente() {
         s.registrar(nombreUsuarioCliente, contraseniaCliente, nombrePerroCliente,tamanioPerro);
         document.querySelector("#pRegistro").innerHTML = "Registro Exitoso!";
         
+        setTimeout(() => {
+        ocultar("registro");
+        mostrar("inicioSesion");
+        }, 2000);
+        
 
     } else if (validacionUsuario === true) {
         document.querySelector("#pRegistro").innerHTML = "Este usuario ya existe";
