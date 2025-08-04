@@ -10,8 +10,8 @@ ocultar("cancelacionContrataciones");
 ocultar("listadoCliente");
 ocultar("listadoPaseador");
 ocultar("cerrarSesion");
-/* ocultar("navCliente");
-ocultar("navPaseador"); */
+ocultar("navCliente");
+ocultar("navPaseador");
 ocultar("inicioSesion");
 
 
