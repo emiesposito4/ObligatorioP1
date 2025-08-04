@@ -1,3 +1,25 @@
+:root {
+  --Primario: #FF6F61;
+  --Secundario: #FFEB3B;
+  --Fondo: #fdf5d8;
+  --Texto: #000000;
+}
+
+body {
+  background-color: var(--Fondo);
+}
+
+/* NavBar */
+
+header {
+  background-color: var(--Primario);
+}
+
+header nav ul li a {
+  color: var(--Texto) !important;
+  font-family: "Inter";
+  font-weight: 800;
+}
 
 
 #aIniciarSesion, #aRegistrarse {
@@ -9,10 +31,4 @@
 
 #aIniciarSesion:hover, #aRegistrarse:hover {
   color: rgb(0, 0, 149);
-}
-
-
-
-header {
-  background-color: gray;
 }
