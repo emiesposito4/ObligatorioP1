@@ -164,7 +164,7 @@ function inicarSesion() {
         inyectarTablaListadoPerrosPaseador();
         inyectarTablaListadoPerrosPaseadorConteo();
     } else {
-        document.querySelector("#pInicioSesion").innerHTML = "Nombre de usuario y/o contraseña incorrectos"
+        document.querySelector("#pInicioSesion").innerHTML = "- Nombre de usuario y/o contraseña incorrectos"
     }
 
 

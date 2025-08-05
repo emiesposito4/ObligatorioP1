@@ -1,5 +1,6 @@
 :root {
   --Primario: #FF6F61;
+  --PrimarioHover: #ff3321;
   --Secundario: #FFEB3B;
   --Fondo: #fdf5d8;
   --Texto: #000000;
@@ -34,6 +35,11 @@ header nav ul li a:hover {
   background-color: var(--Primario);
   border: 1px solid var(--Primario);
   font-weight: 500;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: var(--PrimarioHover) !important;
+  border: 1px solid var(--PrimarioHover) !important;
 }
 
 #aIniciarSesion, #aRegistrarse {
