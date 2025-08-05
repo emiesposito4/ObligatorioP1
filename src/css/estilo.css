@@ -3,10 +3,12 @@
   --Secundario: #FFEB3B;
   --Fondo: #fdf5d8;
   --Texto: #000000;
+  --Blanco: #fff;
 }
 
 body {
   background-color: var(--Fondo);
+  font-family: "Inter";
 }
 
 /* NavBar */
@@ -17,7 +19,6 @@ header {
 
 header nav ul li a {
   color: var(--Texto) !important;
-  font-family: "Inter";
   font-weight: 800;
   padding-left: 6px;
 }
@@ -26,6 +27,14 @@ header nav ul li a:hover {
   border-left: 3px solid var(--Texto);
 }
 
+
+/* Registro */
+
+.btn-primary {
+  background-color: var(--Primario);
+  border: 1px solid var(--Primario);
+  font-weight: 500;
+}
 
 #aIniciarSesion, #aRegistrarse {
   color: blue; 
@@ -36,4 +45,8 @@ header nav ul li a:hover {
 
 #aIniciarSesion:hover, #aRegistrarse:hover {
   color: rgb(0, 0, 149);
+}
+
+#registro h1 {
+  font-weight: 700;
 }

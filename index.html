@@ -42,26 +42,27 @@
     </header>
     
 
-    <main>
+    <main class="container">
 
-        <section id="registro">
-            <h1>Registro Cliente</h1> 
-            <label for="txtNombreUsuarioCliente">Nombre de usuario: </label>
-            <input type="text" id="txtNombreUsuarioCliente">
-            <label for="txtContraseniaCliente">Contraseña: </label>
-            <input type="text" id="txtContraseniaCliente">
-            <label for="txtNombrePerro">Nombre de su perro: </label>
-            <input type="text" id="txtNombrePerro">
-            <label for="slcTamanioPerro">Tamaño de su perro: </label>
-            <select id="slcTamanioPerro">
-                <option value="Grande">Grande</option>
-                <option value="Mediano">Mediano</option>
-                <option value="Chico">Chico</option>
-            </select>
-            <input type="button" id="btnRegistroCliente" value="Registrar">
+        <section id="registro" class="row m-1">
+            <h1 class="text-center mt-4">Registro Cliente</h1> 
+            <form action="" class="mt-3">
+                <label for="txtNombreUsuarioCliente" class="form-label">Nombre de usuario:</label>
+                <input type="text" id="txtNombreUsuarioCliente" class="form-control">
+                <label for="txtContraseniaCliente" class="form-label mt-2">Contraseña:</label>
+                <input type="text" id="txtContraseniaCliente" class="form-control">
+                <label for="txtNombrePerro" class="form-label mt-2">Nombre de su perro:</label>
+                <input type="text" id="txtNombrePerro" class="form-control">
+                <label for="slcTamanioPerro" class="form-label mt-2">Tamaño de su perro: </label>
+                <select id="slcTamanioPerro" class="form-select">
+                    <option value="Grande">Grande</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Chico">Chico</option>
+                </select>
+                <input type="button" id="btnRegistroCliente" value="Registrarse" class="btn btn-primary mt-3">
+            </form>
             <p id="pRegistro"></p>
-            <a id="aIniciarSesion">Iniciar Sesión</a>
-            <hr>
+            <a id="aIniciarSesion" class="mt-3">Ya tengo una cuenta</a>
         </section>
 
         <section id="inicioSesion">
