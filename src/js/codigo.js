@@ -122,7 +122,7 @@ function registroCliente() {
         setTimeout(() => {
         ocultar("registro");
         mostrar("inicioSesion");
-        }, 2000);
+        }, 800);
         
 
     } else if (validacionUsuario === true) {
@@ -241,7 +241,7 @@ function inyectarContratacionATabla() {
             document.querySelector("#tblCancelacionContrataciones").innerHTML += `<tr>
                                                                                     <td>${obtenerPaseadorPorID}</td>
                                                                                     <td>${contratacion.estado}</td>
-                                                                                    <td><input type="button" value="Cancelar" class="btnCancelar" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
+                                                                                    <td><input type="button" value="Cancelar" class="btnCancelar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
                                                                                     </tr>`
 
         }
@@ -313,7 +313,7 @@ function inyectarATablaGestionContrataciones() {
             document.querySelector("#tblGestionContrataciones").innerHTML += `<tr>
                                                                                 <td>${contratacion.cliente}</td>
                                                                                 <td>${obtenerTamanioPerroPorNombrePorNombreCliente}</td>
-                                                                                <td><input type="button" value="Procesar" class="btnProcesar" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
+                                                                                <td><input type="button" value="Procesar" class="btnProcesar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
                                                                                 <td>${contratacion.estado}</td>
                                                                                 </tr>`
 

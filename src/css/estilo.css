@@ -69,3 +69,10 @@ h1 {
   box-shadow: 0 0 18px rgba(255, 111, 97, 0.6); 
   border: 3px solid var(--Primario);
 }
+
+/* Botones Tabla */
+
+.btn:disabled {
+  background-color: #8b8888;
+  border: 1px solid #8b8888;
+}
