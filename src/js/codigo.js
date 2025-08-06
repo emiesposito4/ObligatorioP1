@@ -37,7 +37,7 @@ function mostrarCancelarContratacion() {
 
 function mostrarListadoCliente() {
     ocultarTodo();
-    mostrar("listadoCliente")
+    mostrar("listadoCliente");
 }
 
 function mostrarCerrarSesionC() {
@@ -48,11 +48,13 @@ function mostrarCerrarSesionC() {
 function mostrarIniciarSesion() {
     ocultarTodo();
     mostrar("inicioSesion");
+    mostrar("tituloApp");
 }
 
 function mostrarRegistrarse() {
     ocultarTodo();
-    mostrar("registro")
+    mostrar("registro");
+    mostrar("tituloApp");
 }
 
 
@@ -90,6 +92,7 @@ function ocultarTodo() {
     ocultar("listadoCliente");
     ocultar("listadoPaseador");
     ocultar("cerrarSesion");
+    ocultar("tituloApp");
     
 }
 
@@ -456,6 +459,7 @@ function cerrarSesion() {
     ocultar("navCliente");
     ocultar("navPaseador");
     ocultar("inicioSesion");
+    mostrar("tituloApp");
 
     usuarioLogueado = null;
     paseadorLogueado = null;
