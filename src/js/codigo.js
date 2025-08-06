@@ -240,7 +240,7 @@ function inyectarContratacionATabla() {
 
             document.querySelector("#tblCancelacionContrataciones").innerHTML += `<tr>
                                                                                     <td class="pt-4">${obtenerPaseadorPorID}</td>
-                                                                                    <td>${contratacion.estado}</td>
+                                                                                    <td class="pt-4">${contratacion.estado}</td>
                                                                                     <td class="pt-4"><input type="button" value="Cancelar" class="btnCancelar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
                                                                                     </tr>`
 
