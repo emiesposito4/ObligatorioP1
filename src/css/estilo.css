@@ -56,3 +56,9 @@ header nav ul li a:hover {
 #registro h1, #inicioSesion h1 {
   font-weight: 700;
 }
+
+.form-control:focus, .form-select:focus {
+  outline: none;
+  box-shadow: 0 0 18px rgba(255, 111, 97, 0.6); 
+  border: 3px solid var(--Primario);
+}
