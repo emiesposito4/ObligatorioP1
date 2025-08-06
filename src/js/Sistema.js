@@ -125,7 +125,7 @@ class Sistema {
         let mensaje = "";
         if(nombrePerro === "") {
             nombrePerroVacio = true;
-            mensaje += "Indique el nombre de su perro";
+            mensaje += "- Indique el nombre de su perro";
         }
 
         return mensaje;
