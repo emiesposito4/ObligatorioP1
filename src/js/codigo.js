@@ -150,19 +150,19 @@ function inicarSesion() {
 
     if(loginValidoCliente) {
         document.querySelector("#pInicioSesion").innerHTML = "Inicio de sesión exitoso!"
-        ocultarTodo()
-        mostrar("navCliente")
-        mostrar("seleccionarPaseador")
-        usuarioLogueado = s.obtenerUsuario(usuario, contrasenia)
+        ocultarTodo();
+        mostrarFlex("navCliente");
+        mostrar("seleccionarPaseador");
+        usuarioLogueado = s.obtenerUsuario(usuario, contrasenia);
         inyectarATablaDelCliente();
         inyectarPaseadoresAlSelect();
         
     } else if (loginValidoPaseador) {
         document.querySelector("#pInicioSesion").innerHTML = "Inicio de sesión exitoso!"
         ocultarTodo()
-        mostrar("navPaseador")
-        mostrar("gestionContrataciones")
-        paseadorLogueado = s.obtenerPaseador(usuario, contrasenia)
+        mostrarFlex("navPaseador");
+        mostrar("gestionContrataciones");
+        paseadorLogueado = s.obtenerPaseador(usuario, contrasenia);
         inyectarATablaGestionContrataciones();
         inyectarTablaListadoPerrosPaseador();
         inyectarTablaListadoPerrosPaseadorConteo();
@@ -509,4 +509,8 @@ function ocultar(id) {
 
 function mostrar(id) {
     document.querySelector("#" + id).style.display = "block"
+}
+
+function mostrarFlex(id) {
+    document.querySelector("#" + id).style.display = "flex"
 }

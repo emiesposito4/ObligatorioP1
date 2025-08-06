@@ -23,6 +23,7 @@ header nav ul li a {
   color: var(--Texto) !important;
   font-weight: 800;
   padding-left: 6px;
+  font-size: 20px;
 }
 
 header nav ul li a:hover {
@@ -76,3 +77,5 @@ h1 {
   background-color: #8b8888;
   border: 1px solid #8b8888;
 }
+
+
