@@ -4,6 +4,7 @@
   --Secundario: #FFEB3B;
   --Fondo: #fdf5d8;
   --Texto: #000000;
+  --texto2: #191919;
   --Blanco: #fff;
 }
 
@@ -26,6 +27,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
   border-left: 3px solid var(--Texto);
+}
+
+h1 {
+  color: var(--Texto2);
+  font-weight: 700;
 }
 
 #tituloApp {
@@ -57,9 +63,6 @@ header nav ul li a:hover {
   color: rgb(0, 0, 149);
 }
 
-#registro h1, #inicioSesion h1, #tituloApp {
-  font-weight: 700;
-}
 
 .form-control:focus, .form-select:focus {
   outline: none;
