@@ -28,6 +28,10 @@ header nav ul li a:hover {
   border-left: 3px solid var(--Texto);
 }
 
+#tituloApp {
+  color: var(--Texto);
+}
+
 
 /* Registro */
 
@@ -53,7 +57,7 @@ header nav ul li a:hover {
   color: rgb(0, 0, 149);
 }
 
-#registro h1, #inicioSesion h1 {
+#registro h1, #inicioSesion h1, #tituloApp {
   font-weight: 700;
 }
 
