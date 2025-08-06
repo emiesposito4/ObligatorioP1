@@ -239,9 +239,9 @@ function inyectarContratacionATabla() {
             let obtenerPaseadorPorID = s.obtenerPaseadorPorID(contratacion.paseador)
 
             document.querySelector("#tblCancelacionContrataciones").innerHTML += `<tr>
-                                                                                    <td>${obtenerPaseadorPorID}</td>
+                                                                                    <td class="pt-4">${obtenerPaseadorPorID}</td>
                                                                                     <td>${contratacion.estado}</td>
-                                                                                    <td><input type="button" value="Cancelar" class="btnCancelar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
+                                                                                    <td class="pt-4"><input type="button" value="Cancelar" class="btnCancelar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
                                                                                     </tr>`
 
         }
@@ -311,10 +311,10 @@ function inyectarATablaGestionContrataciones() {
             let obtenerTamanioPerroPorNombrePorNombreCliente = s.obtenerTamanioPerroPorNombreCliente(contratacion.cliente)
 
             document.querySelector("#tblGestionContrataciones").innerHTML += `<tr>
-                                                                                <td>${contratacion.cliente}</td>
-                                                                                <td>${obtenerTamanioPerroPorNombrePorNombreCliente}</td>
-                                                                                <td><input type="button" value="Procesar" class="btnProcesar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
-                                                                                <td>${contratacion.estado}</td>
+                                                                                <td class="pt-4">${contratacion.cliente}</td>
+                                                                                <td class="pt-4">${obtenerTamanioPerroPorNombrePorNombreCliente}</td>
+                                                                                <td class="pt-4"><input type="button" value="Procesar" class="btnProcesar btn btn-primary" data-id-contratacion="${contratacion.numeroIdentificador}" ${ocultarBoton}></td>
+                                                                                <td class="pt-4">${contratacion.estado}</td>
                                                                                 </tr>`
 
         }
@@ -354,8 +354,8 @@ function inyectarATablaDelCliente() {
 
         
         document.querySelector("#tblListadoCliente").innerHTML += `<tr>
-                                                                        <td>${paseador.nombre}</td>
-                                                                        <td>${obtenerCantPerrosAsignadosPorIDPaseador}</td>
+                                                                        <td class="pt-4">${paseador.nombre}</td>
+                                                                        <td class="pt-4">${obtenerCantPerrosAsignadosPorIDPaseador}</td>
                                                                     </tr>`
 
         
@@ -386,8 +386,8 @@ function inyectarTablaListadoPerrosPaseador() {
                 let obtenerNombrePerroPorNombreCliente = s.obtenerNombrePerroPorNombreCliente(contratacion.cliente)
 
                 document.querySelector("#tblListadoPerrosPaseador").innerHTML += `<tr>
-                                                                                    <td>${obtenerNombrePerroPorNombreCliente}</td>
-                                                                                    <td>${obtenerTamanioPerroPorNombrePorNombreCliente}</td>
+                                                                                    <td class="pt-4">${obtenerNombrePerroPorNombreCliente}</td>
+                                                                                    <td class="pt-4">${obtenerTamanioPerroPorNombrePorNombreCliente}</td>
                                                                                     </tr>`
 
             }
@@ -436,9 +436,9 @@ function inyectarTablaListadoPerrosPaseadorConteo() {
             
 
             document.querySelector("#tblListadoPerrosPaseadorConteo").innerHTML = `<tr>
-                                                                                        <td>${cuposOcupados}</td>
-                                                                                        <td>${obtenerCupoMaximoPorID}</td>
-                                                                                        <td>${porcentajeCupos}%</td>
+                                                                                        <td class="pt-4">${cuposOcupados}</td>
+                                                                                        <td class="pt-4">${obtenerCupoMaximoPorID}</td>
+                                                                                        <td class="pt-4">${porcentajeCupos.toFixed(1)}%</td>
                                                                                         </tr>`
 
 
