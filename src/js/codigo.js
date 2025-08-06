@@ -5,7 +5,7 @@ let usuarioLogueado = null;
 let paseadorLogueado = null;
 
 ocultar("seleccionarPaseador");
-ocultar("gestionContrataciones");
+/* ocultar("gestionContrataciones"); */
 ocultar("cancelacionContrataciones");
 ocultar("listadoCliente");
 ocultar("listadoPaseador");
